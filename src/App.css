@@ -1,0 +1,1248 @@
+@font-face {
+  font-family: 'Gtwalsheimprotrial';
+  src: url('https://uploads-ssl.webflow.com/5b32655069229148933e1636/5b3363c29fe4359cb2f868e6_GTWalsheimProTrial-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'Gtwalsheimprotrial';
+  src: url('https://uploads-ssl.webflow.com/5b32655069229148933e1636/5b33641ec698a7f268672e0c_GTWalsheimProTrial-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'Gtwalsheimprotrial';
+  src: url('https://uploads-ssl.webflow.com/5b32655069229148933e1636/5b33641e775e213d721de757_GTWalsheimProTrial-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'Gtwalsheimprotrial';
+  src: url('https://uploads-ssl.webflow.com/5b32655069229148933e1636/5b33641e1379b7932628d0c8_GTWalsheimProTrial-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+:root 
+{
+  --main: #004dcd;
+  --secondary: #004fcd1c;
+  --white: #ffffff;
+  --p: #777777;
+  --gray: #0f0f0f;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{color: var(--p);} ::selection {color: var(--main); background-color: var(--gray);}
+
+.borderr
+{
+  width: 100%;
+  height: 1px;
+  background-color: var(--p);
+  opacity: .1;
+}
+
+
+
+@keyframes slideUp {
+  from {transform: translateY(5rem); opacity: 0;}
+  to {transform: translateY(0rem);; opacity: 1;}
+}
+
+.app
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo
+{
+  height: 8rem;
+  position: relative;
+  right: 25rem;
+  
+}
+.logo img
+{
+  width: 10rem;
+}
+
+.presentation 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0 0rem 0;
+  font-size: 1.13rem;
+}
+.presentation .content
+{
+  position: relative;
+}
+.presentation .content h3
+{
+  font-weight: 600;
+
+  animation: 1s slideUp;
+}
+.presentation .content h1
+{
+  font-size: 5.5rem;
+  font-weight: 600;
+  
+  animation: 1.3s slideUp;
+}
+
+.presentation .content h1 span
+{
+  color: var(--main);
+}
+.presentation .content h2
+{
+  position: absolute;
+  top: -1rem;
+  line-height: 5.5rem;
+  font-size: 6rem;
+  font-weight: 600;
+  z-index: -1;
+  color: var(--gray);
+}
+.presentation .content p
+{
+  max-width: 21.5rem;
+  word-spacing: 0.3rem;
+  line-height: 1.5rem;
+  
+  animation: 1.3s slideUp;
+}
+.presentation .content .btn 
+{
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 11px;
+  color: var(--white);
+  padding: 0.7rem 1rem 0.7rem 0;
+  border-bottom: 1px solid var(--main);
+  border-radius: 0;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+
+}
+.presentation .content .btn:hover
+{
+  background-color: var(--secondary);
+  padding: 0.7rem 1rem 0.7rem 1rem;
+}
+.presentation .content .btn:focus
+{
+  border-bottom: 1px solid var(--main);
+}
+
+
+@keyframes zoomIn {
+  0% {transform: scale(0.7);}
+  100% {transform: scale(1);}
+}
+.presentation .image 
+{
+  margin-left: 8rem;
+  animation: 1.5s zoomIn;
+}
+.presentation .image img
+{
+  width: 30rem;
+}
+
+.skills
+{
+  background-size: 50rem 30rem;
+  background-position: 0 80rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  margin: 5rem 0 5rem 0;
+}
+.skills .headings 
+{
+  width: 30rem;
+  padding: 0 9rem 0 0;
+}
+.skills .headings h5
+{
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--main);
+}
+.skills .headings h1
+{
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.skills .content p
+{
+  max-width: 30rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  font-size: 1.13rem;
+}
+.skills .headings .btn 
+{
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 11px;
+  color: var(--white);
+  padding: 0.7rem 1rem 0.7rem 0;
+  border-bottom: 1px solid var(--main);
+  border-radius: 0;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+
+}
+.skills .headings .btn:hover
+{
+  
+  background-color: var(--secondary);
+  padding: 0.7rem 1rem 0.7rem 1rem;
+}
+.skills .headings .btn:focus
+{
+  border-bottom: 1px solid var(--main);
+}
+
+
+
+.carusel-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 5rem 0;
+}
+
+.carusel {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.carusel.animating {
+  pointer-events: none;
+}
+
+.carusel .box { 
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.carusel-item {
+  width: 475px;
+  margin: 0.4rem;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.carusel-item .img-hover
+{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  
+  background-color: #000000;
+}
+.carusel-item h2
+{
+  font-size: 26px;
+  position: absolute;
+  bottom: 29%;
+  left: 3%;
+  font-weight: 600;
+  border-left: 1px solid var(--main);
+  padding-left: 1rem;
+  z-index: 9999 !important;
+  text-shadow: 0px 0px 40px black;
+}
+@keyframes textAppear {
+  0% {transform: translateY(2rem); opacity: 0; visibility: hidden;}
+  100% {transform: translateY(0rem); opacity: 1; visibility: visible;} 
+}
+@keyframes textDisappear {
+  0%  {transform: translateY(0rem); opacity: 1; visibility: visible;} 
+  100%{transform: translateY(2rem); opacity: 0; visibility: hidden;}
+}
+.carusel-item:nth-child(1) img
+{
+  border-radius: 10px;
+}
+
+.carusel-item-img {
+  width: 100%;
+  height: 23rem;
+  object-fit: cover;
+}
+
+.carusel-control-prev,
+.carusel-control-next {
+  position: absolute;
+  top: 147rem;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--main);
+  transition: background-color 0.2s ease;
+  padding: 2.5rem;
+  background-color: #0006104d;
+}
+
+.carusel-control-prev img,
+.carusel-control-next img
+{
+  width: 1.2rem;
+}
+
+.carusel-control-prev {
+  left: 5%;
+}
+
+.carusel-control-next {
+  right: 5%;
+}
+
+.carusel-control-prev:hover,
+.carusel-control-next:hover {
+  background-color: #000610;
+}
+.carusel-container .headings h1
+{
+  font-weight: 600;
+  font-size: 3rem;
+
+  position: relative;
+  top: 13rem;
+  left: .25rem;
+  line-height: 2rem;
+}
+.carusel-container .headings h1 span
+{
+  font-size: 2rem;
+  font-weight: 550;
+  color: var(--main);
+  margin-left: 1rem;
+}
+.carusel-container .portfolio .btn 
+{
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 11px;
+  color: var(--white);
+  padding: 0.7rem 1rem 0.7rem 0;
+  border-bottom: 1px solid var(--main);
+  border-radius: 0;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+
+  position: relative;
+  top: 41rem;
+  left: .25rem;
+  display: flex;
+  z-index: 9;
+  align-items: center;
+}
+.carusel-container .portfolio .btn:hover
+{
+  background-color: var(--secondary);
+  padding: 0.7rem 1rem 0.7rem 1rem;
+}
+.carusel-container .portfolio .btn:focus
+{
+  border-bottom: 1px solid var(--main);
+}
+.carusel-container .portfolio .btn img
+{
+  width: 1.2rem;
+  margin-left: 1rem;
+}
+
+.about
+{
+  background: url(./src/assets/bg.png);
+  background-size: 50rem 30rem;
+  background-position: 0 80rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem 0;
+}
+.about .headings 
+{
+  width: 30rem;
+  padding: 0 9rem 0 0;
+}
+.about .headings h1
+{
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.about .headings h5
+{
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--main);
+}
+.about .content p
+{
+  max-width: 30rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  font-size: 1.13rem;
+}
+.about .content p .p-margin
+{
+  margin: 1rem 0;
+}
+.about .headings .btn 
+{
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 11px;
+  color: var(--white);
+  padding: 0.7rem 1rem 0.7rem 0;
+  border-bottom: 1px solid var(--main);
+  border-radius: 0;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+
+  display: flex;
+  align-items: center;
+}
+.about .headings .btn:hover
+{
+  
+  background-color: var(--secondary);
+  padding: 0.7rem 1rem 0.7rem 1rem;
+}
+.about .headings .btn:focus
+{
+  border-bottom: 1px solid var(--main);
+}
+.about .btn img
+{
+  width: 1.2rem;
+  margin-left: 1rem;
+}
+
+.contact {
+  background-image: url(./src/assets/laptop-coding.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -.1rem -6rem;
+  padding-top: 12rem;
+
+
+  margin: 2rem 0 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .headings 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 40rem;
+}
+.contact .headings h1
+{
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.contact .headings h5
+{
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--main);
+}
+.contact .content p
+{
+  max-width: 30rem;
+  line-height: 1.5rem;
+}
+.contact p span
+{
+  font-weight: 500;
+  color: white;
+}
+.contact .headings .btn 
+{
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 11px;
+  color: var(--white);
+  padding: 0.7rem 1rem 0.7rem 0;
+  border-bottom: 1px solid var(--main);
+  border-radius: 0;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+
+  display: flex;
+  justify-tracks: center;
+  align-items: center;
+
+}
+.contact .headings .btn:hover
+{
+  
+  background-color: var(--secondary);
+  padding: 0.7rem 1rem 0.7rem 1rem;
+}
+.contact .headings .btn:focus
+{
+  border-bottom: 1px solid var(--main);
+}
+.contact .btn img
+{
+  width: 1.2rem;
+  margin-left: 1rem;
+}
+
+.footer
+{
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer p
+{
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.footer img
+{
+  width: 7rem;
+}
+
+.testi
+{
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0 5rem 0;
+}
+.testi .headings 
+{
+  width: 30rem;
+  padding: 0 9rem 0 0;
+}
+.testi  h5
+{
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+  color: var(--main);
+  width: 100%;
+}
+.testi .container
+{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+.testi .container .box
+{
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  padding-right: 4.5rem;
+  position: relative;
+}
+.testi .container .box:nth-child(2)
+{
+  position: relative;
+  left: 2.5rem;
+}
+.testi .container .box:nth-child(3)
+{
+  position: relative;
+  left: 4.5rem;
+}
+.testi .container .box img
+{
+  width: 24px;
+  margin-bottom: .5rem;
+}
+.testi .container .box p
+{
+  word-spacing: 0.2rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  font-size: 1.13rem;
+}
+.testi .container .box a
+{
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: .1rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+  text-decoration: none;
+}
+.testi .container .box .person
+{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -5rem;
+}
+.testi .container .box .person .name
+{
+  font-size: 18px;
+  color: white;
+  height: .6rem;
+}
+.testi .container .box .person .description
+{
+  word-spacing: initial;
+  font-size: 17px;
+}
+
+
+
+
+
+/* RESPOSIVE */
+
+@media only screen and (max-width: 1000px) {
+  .testi .container .box:nth-child(2),
+  .testi .container .box:nth-child(3)
+  {
+    position: relative;
+    left: 0;
+  }
+  
+}
+
+
+@media only screen and (max-width: 990px) {
+
+  .logo 
+  {
+    right: 18.25rem;
+  }
+
+  .presentation .content h1
+  {
+    font-size: 5rem;
+  }
+  .presentation .content h2
+  {
+    font-size: 5.5rem;
+  }
+  .presentation .image 
+  {
+    margin-left: 1.9rem;
+  }
+  .presentation .image img
+  {
+    width: 23rem;
+  }
+  .presentation .content p
+  {
+    text-align: justify;
+  }
+
+  .skills .headings 
+  {
+    width: 22rem;
+    padding: 0 3rem 0 0;
+  }
+  .skills .headings h1
+  {
+    font-size: 38px;
+  }
+  .skills .content p
+  {
+    max-width: 23rem;
+  }
+
+  .carusel-item {
+    width: 350px;
+  }
+
+  .about .headings 
+  {
+    width: 22rem;
+    padding: 0 3rem 0 0;
+  }
+  .about .headings h1
+  {
+    font-size: 38px;
+  }
+  .about .content p
+  {
+    max-width: 23rem;
+  } 
+}
+
+@media only screen and (max-width: 760px)
+{
+  body
+  {
+    font-size: 18.2px;
+  }
+
+  .logo 
+  {
+    right: 10rem;
+  }
+  .logo img
+  {
+    width: 7rem;
+  }
+
+  .presentation 
+  {
+    position: relative;
+    padding-bottom: 10rem;
+  }
+  .presentation .content h1
+  {
+    font-size: 70px;
+    margin-bottom: 1rem;
+  }
+  .presentation .content h2
+  {
+    font-size: 5.5rem;
+    top: -1rem;
+  }
+  .presentation .image 
+  {
+    position: absolute !important;
+    top: -5rem !important;
+    left: -8rem !important;
+    z-index: -1;
+  }
+  .presentation .image img
+  {
+    width: 30rem;
+    opacity: 0;
+  }
+
+  .presentation .content
+  {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .presentation .content p
+  {
+    width: 100%;
+
+  }
+
+  .skills
+  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 5rem;
+  }
+  .skills .headings 
+  {
+    padding: 0;
+  }
+  .skills .headings h1
+  {
+    font-size: 38px;
+  }
+  .skills .btn
+  {
+    margin-bottom: 3rem;
+  }
+  .skills .content p
+  {
+    max-width: 35rem;
+    font-size: 18.2px;
+  }
+
+  .testi
+  {
+    margin-bottom: 8rem;
+    padding: 0 5rem;
+  }
+  .testi .container .box .person .description
+  {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .carusel
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .carusel-item {
+    width: 500px;
+  }
+  .carusel-control-next,
+  .carusel-control-prev
+  {
+    top: 188.5rem;
+  }
+  .carusel-container .portfolio .btn
+  {
+    top: 77rem;
+  }
+  .carusel-container .headings h1
+  {
+    top: 2rem;
+  }
+
+  .about
+  {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: none;
+    padding: 0 5rem;
+
+    background: url(./src/assets/bg.png);
+    background-size: 50rem 50rem;
+    background-position: 0 45rem;
+    width: 100%;
+  }
+  .about .headings 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .about .headings h1
+  {
+    font-size: 38px;
+  }
+  .about .btn
+  {
+    margin-bottom: 3rem;
+  }
+  .about .content p
+  {
+    max-width: 35rem;
+    font-size: 18.2px;
+  }
+  .contact
+  {
+    padding: 0 5rem;
+
+  }
+}
+
+
+@media only screen and (max-width: 580px)
+{
+  body
+  {
+    font-size: 18.2px;
+  }
+
+  .logo 
+  {
+    position: initial;
+  }
+  .logo img
+  {
+    width: 7rem;
+  }
+
+  .presentation 
+  {
+    position: relative;
+    padding-bottom: 15rem;
+  }
+  .presentation .content h1
+  {
+    font-size: 70px;
+    margin-bottom: 1rem;
+  }
+  .presentation .content h2
+  {
+    font-size: 5.5rem;
+    top: -1rem;
+  }
+  .presentation .image 
+  {
+    position: absolute !important;
+    top: -5rem !important;
+    left: -8rem !important;
+    z-index: -1;
+  }
+  .presentation .image img
+  {
+    width: 30rem;
+    opacity: 0;
+  }
+
+  .presentation .content
+  {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .presentation .content p
+  {
+    width: 100%;
+
+  }
+
+  .skills
+  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .skills .headings 
+  {
+    padding: 0;
+  }
+  .skills .headings h1
+  {
+    font-size: 38px;
+    width: 20rem;
+    margin: 0 auto;
+  }
+  .skills .btn
+  {
+    margin-bottom: 3rem;
+  }
+  .skills .content p
+  {
+    font-size: 1.13rem;
+    text-align: justify;
+  }
+
+  .testi
+  {
+    margin-bottom: 0rem;
+  }
+  .testi .container
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .testi .container .box
+  {
+    margin-bottom: 8rem;
+    width: 100%;
+    padding: 0  ;
+  }
+  .testi .container .box:nth-child(2)
+  {
+    position: initial;
+  }
+  .testi .container .box:nth-child(3)
+  {
+    position: initial;
+  }
+  .testi .container .box .person .description
+  {
+    font-size: 16px;
+  }
+
+  .carusel
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .carusel-item {
+    max-width: 450px;
+  }
+  .carusel-control-next,
+  .carusel-control-prev
+  {
+    top: 218rem;
+  }
+  .carusel-container .portfolio .btn
+  {
+    top: 77rem;
+  }
+  .carusel-container .headings h1
+  {
+    top: 2rem;
+  }
+
+  .about
+  {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .about .headings 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .about .headings h1
+  {
+    font-size: 38px;
+  }
+  .about .btn
+  {
+    margin-bottom: 3rem;
+  }
+  .about .content p
+  {
+    max-width: 35rem;
+    font-size: 18.2px;
+  }
+  
+  .contact 
+  {
+    padding-top: 10rem;
+    background-position: -.1rem -5rem;
+  }
+  .contact .headings h1
+  {
+    margin-bottom: 2rem;
+  }
+  .contact .headings p 
+  {
+    text-align: justify;
+  }
+
+  .footer p
+  {
+    font-size: .7rem;
+  }
+  .footer img
+  {
+    width: 6rem;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+
+  .presentation .content h2
+  {
+    font-size: 4.5rem;
+  }
+  .skills
+  {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .testi
+  {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .about
+  {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .contact
+  {
+    width: 100%;
+    padding: 0 2rem;
+    background-position: -.1rem -3rem;
+    padding-top: 10rem;
+  }
+
+  .carusel-item {
+    max-width: 410px;
+    height: 280px;
+  }
+  .carusel-item img
+  {
+    height: 100%;
+  }
+  .carusel-control-next, .carusel-control-prev {
+    top: 204rem;
+  }
+  .carusel-container .portfolio .btn {
+    top: 59rem;
+  }   
+}
+
+@media only screen and (max-width: 450px)
+{
+  .presentation .content
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .presentation img
+  {
+    display: none;
+  }
+  .presentation .content p
+  {
+    max-width: 20rem;
+  }
+  .carusel-item {
+    max-width: 350px;
+    height: 280px;
+  }
+  .carusel-control-next, .carusel-control-prev {
+    top: 213rem;
+  }
+}
+@media only screen and (max-width: 420px)
+{
+  .carusel-control-next, .carusel-control-prev {
+    top: 214rem;
+  }
+
+  .presentation .content h1
+  {
+    font-size: 4rem;
+  }
+  .presentation .content p
+  {
+    font-size: 17px;
+    max-width: 18rem;
+  }
+
+  .skills {
+    padding-top: 2rem;
+  }
+  .skills .headings h1,
+  .about .headings h1
+  {
+    font-size: 2.2rem;
+    width: 18rem;
+    margin: 0 auto;
+  }
+  .skills .content p,
+  .about .content p
+  {
+    font-size: 17px;
+    margin: 0 auto;
+  }
+  .testi .container .box p
+  {
+    font-size: 17px;
+  }
+  .carusel-item {
+    max-width: 345px;
+    height: 270px;
+  }
+  .contact p
+  {
+    font-size: 17px;
+  }
+  
+  .footer 
+  {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem 0;
+  }
+  .footer p 
+  {
+    font-size: 13px;
+  }
+
+  .carusel-container .headings h1
+  {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .carusel-item {
+    max-width: 330px;
+    height: 250px;
+  }
+  .carusel-control-next, .carusel-control-prev {
+    top: 216rem;
+  }
+  .carusel-container .portfolio .btn {
+    top: 55rem;
+  }  
+  .contact
+  {
+    width: 100%;
+    padding: 0 2rem;
+    background-position: -.1rem -2rem;
+    padding-top: 10rem;
+  }
+  .presentation .content h2
+  {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .carusel-item {
+    max-width: 300px;
+    height: 250px;
+  }
+  .carusel-control-next, .carusel-control-prev {
+    top: 227rem;
+  }
+  .skills .headings h1
+  {
+    font-size: 2rem;
+    width: 18rem;
+    margin: 0 auto;
+  }
+  .about .headings h1
+  {
+    font-size: 2rem;
+    width: 18rem;
+  }
+}
