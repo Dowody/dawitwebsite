@@ -1,19 +1,12 @@
 import React, { useState } from "react";
 import Button from "./Button";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
+import { motion } from "framer-motion";
 
 const Carousel = () => {
   const carouselData = [
-    [
-      "./src/assets/davinci.png",
-      "./src/assets/moldcargo.png",
-      "./src/assets/webscustoms.png",
-    ],
-    [
-      "./src/assets/iTech.png",
-      "./src/assets/Trans.png",
-      "./src/assets/elena.png",
-    ],
+    ["./src/assets/no.jpg", "./src/assets/no.jpg", "./src/assets/no.jpg"],
+    ["./src/assets/no2.webp", "./src/assets/no2.webp", "./src/assets/no2.webp"],
   ];
 
   const [currentCarousel, setCurrentCarousel] = useState(0);
@@ -81,14 +74,20 @@ const Carousel = () => {
       <div className="portfolio">
         <Button
           text={"My Behance"}
-          nav={"https://www.behance.net/dowody"}
+          nav={""}
           target={"_blank"}
           image={<img alt="" src={"./src/assets/behance.png"} />}
         />
       </div>
-      <Fade right duration={800}>
-        {renderCarousel()}{" "}
-      </Fade>
+      {/* <Fade right duration={800}> */}
+      <motion.div
+        animate={{ x: 0 }}
+        initial={{ x: 1000 }}
+        transition={{ duration: 1 }}
+      >
+        {renderCarousel()}
+      </motion.div>
+      {/* </Fade> */}
       <button className="carusel-control-prev" onClick={handlePrevClick}>
         <img
           src="./src/assets/arrow.png"

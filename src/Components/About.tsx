@@ -9,7 +9,7 @@ const About = () => {
         <h1>Designing with passion for Problem Solving</h1>
         <Button
           text="Follow me on instagram"
-          nav="https://www.instagram.com/dowody9/"
+          nav=""
           target={"_blank"}
           image={<img alt="" src={"./src/assets/insta.png"} />}
         />

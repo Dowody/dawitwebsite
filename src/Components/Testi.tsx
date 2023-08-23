@@ -23,15 +23,15 @@ const Testi = () => {
               fugiat non.
             </p>
             <div className="person">
-              <p className="name">Natalia</p>
-              <p className="description">Maths Teacher</p>
+              <p className="name">Kate</p>
+              <p className="description">University Teacher</p>
             </div>
           </div>
         </Fade>
         <Fade bottom duration={800}>
           <div className="box">
             <a href="https://dowody.github.io/MOLDCARGOTRANS/" target="_blank">
-              Moldcargo-Trans
+              Cargo-Trans
             </a>
             <img
               src="./src/assets/quotes.png"
@@ -45,8 +45,8 @@ const Testi = () => {
               Asperiores
             </p>
             <div className="person">
-              <p className="name">Andrei</p>
-              <p className="description">Moldcargo-Trans Founder </p>
+              <p className="name">Michael</p>
+              <p className="description">Cargo-Trans Founder </p>
             </div>
           </div>
         </Fade>

@@ -6,7 +6,7 @@ import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Testi from "./Components/Testi";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 
 const App = () => {
   return (
@@ -16,11 +16,12 @@ const App = () => {
           "body {font-family: Gtwalsheimprotrial, sans-serif; font-size: 18px;background-color: #000000;color: #FFFFFF; "
         }
       </style>
-      <Fade top>
-        <div className="logo">
-          <img src="./src/assets/Dowody-Dev-LOGO.png" alt="" />
-        </div>
-      </Fade>
+      {/* <Fade top> */}
+      {/* <motion.div> */}
+      <div className="logo">
+        <img src="./src/assets/dawit.png" alt="" />
+      </div>
+      {/* </Fade> */}
       <Presentation />
       <Skills />
       <Testi />

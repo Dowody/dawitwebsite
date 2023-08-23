@@ -12,7 +12,7 @@ const Contact = () => {
           <p>
             If you'd like to talk about a project you want help with or need an
             advice about product design, just drop me a message at
-            <span> dowody2006@gmail.com </span> I'm currently Available for any
+            <span> dawit@gmail.com </span> I'm currently Available for any
             design systems projects, dashboard designs or landing pages gigs.
           </p>
           <Button
